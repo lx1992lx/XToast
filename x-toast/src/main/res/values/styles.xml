@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DefaultToastAnimation">
+        <item name="android:windowEnterAnimation">@anim/default_toast_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/default_toast_anim_out</item>
+    </style>
+    <style name="DefaultToastAnimationOnTop">
+        <item name="android:windowEnterAnimation">@anim/default_toast_anim_out</item>
+        <item name="android:windowExitAnimation">@anim/default_toast_anim_in</item>
+    </style>
+</resources>
