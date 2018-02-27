@@ -197,4 +197,10 @@ public class ToastController {
         }
     }
 
+    public void hideAll(){
+        isShowing = false;
+        mManager.removeView(mReadyToShowList.get(0).getView());
+        mReadyToShowList.clear();
+    }
+
 }

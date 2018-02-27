@@ -63,6 +63,8 @@ public class XToast  {
         ToastController.getInstance().show(mContext,config, ToastController.TOAST_TYPE.CUSTOM,null,view);
     }
 
-
+    public static void hideAll(){
+        ToastController.getInstance().hideAll();
+    }
 
 }

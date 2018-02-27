@@ -39,7 +39,7 @@ def gitUrl ="https://github.com/lx1992lx/XToast.git"
 def libName = "XToast"
 
 group = "com.yyxk.XToast"
-version = "1.0.1"
+version = "1.0.2"
 
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
