@@ -47,7 +47,8 @@ public class XToastConfig {
 
     public enum DIRECTION{
         TOP,
-        BOTTOM
+        BOTTOM,
+        CENTER
     }
 
     public int getDefaultLayout() {

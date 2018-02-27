@@ -119,7 +119,7 @@ public class ToastController {
         params.height = WindowManager.LayoutParams.WRAP_CONTENT;
         params.width = WindowManager.LayoutParams.WRAP_CONTENT;
         params.format = PixelFormat.TRANSLUCENT;
-        params.gravity = config.getDirection() == XToastConfig.DIRECTION.TOP ? Gravity.TOP : Gravity.BOTTOM;
+        params.gravity = config.getDirection() == XToastConfig.DIRECTION.TOP ? Gravity.TOP : config.getDirection() == XToastConfig.DIRECTION.BOTTOM?Gravity.BOTTOM:Gravity.CENTER ;
         params.horizontalMargin = FontDisplayUtil.dip2px(context, config.getMarginHorizontal()) / (float) FontDisplayUtil.getScreenWidth(context);
         params.verticalMargin = FontDisplayUtil.dip2px(context, config.getMarginVertical()) / (float) FontDisplayUtil.getScreenHeight(context);
         params.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN;
